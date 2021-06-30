@@ -18,7 +18,7 @@ Here is the list:
 - USB A - USB C adapter
 - USB C - USB A adapter
 - Custom Malware Drive
-- Parros Security OS bootable drive
+- Parrot Security OS bootable drive
 - TP Link - Wireless Network Adapter
 - Micro SD Card adapter
 - 64GB USB Drive
