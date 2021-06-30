@@ -4,7 +4,7 @@
 ## Resources:
 - YouTube - https://www.youtube.com/c/CosmodiumCS
 - Part 1 - https://www.youtube.com/watch?v=j0v0rJsWDdE 
-- Part 2 - 
+- Part 2 - https://youtu.be/ao32BS8fwaM
 
 ## Part 1 | Overview
 ```
