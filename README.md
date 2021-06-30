@@ -4,7 +4,7 @@
 ## Resources:
 - YouTube - https://www.youtube.com/c/CosmodiumCS
 - Part 1 - https://www.youtube.com/watch?v=j0v0rJsWDdE 
-- Part 2 - 
+- Part 2 - https://youtu.be/ao32BS8fwaM
 
 ## Part 1 | Overview
 ```
@@ -18,7 +18,7 @@ Here is the list:
 - USB A - USB C adapter
 - USB C - USB A adapter
 - Custom Malware Drive
-- Parros Security OS bootable drive
+- Parrot Security OS bootable drive
 - TP Link - Wireless Network Adapter
 - Micro SD Card adapter
 - 64GB USB Drive
