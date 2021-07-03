@@ -18,6 +18,7 @@ DELAY 200
 STRING mkdir loot\$env:UserName
 ENTER
 DELAY 200
+REM change "switch1" to "switch2" if you are placing this payload in switch 2
 STRING cd .\payloads\switch1\
 ENTER
 DELAY 200

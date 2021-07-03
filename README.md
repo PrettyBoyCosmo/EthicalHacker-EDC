@@ -49,3 +49,16 @@ Links:
 - Unmodefied Script - https://forums.hak5.org/topic/40442-help-with-wifi-password-grabber/
 - DuckyFlasher - https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Flashing-ducky 
 - USB RubberDucky Tutorial - https://www.youtube.com/watch?v=o1RbXtx0r4U 
+
+## Part 3 | BashBunny Web Credential Stealer
+```
+in this part, we built a payload for exfiltrating saved 
+wifi passwords from the users computer
+```
+- we used a web browser password "recovery tool" in order to grab passwords saved by the browser
+    - the software is created by Nirsoft and can be downloaded here - 'https://www.nirsoft.net/utils/web_browser_password.html'
+    - we renamed the file[s] to "P" for a quicker payload
+- we then built a 'payload.txt' to run our duckyscript file [ducky-script.txt]
+- this duckyscript file will run our P.exe file, steal the creds, and save them to our loot directory
+- BY DEFAULT, THE SCRIPT WILL ONLY WORK IN SWITCH ONE
+    - view "ducky-script.txt" on how to change this
