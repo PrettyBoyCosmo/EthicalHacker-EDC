@@ -2,7 +2,7 @@
 > Blue Cosmo
 
 ## Requirements
-bashbunny, twinduck labled "W" or usb drive labled "W"
+bashbunny labled "BASHBUNNY", twinduck labled "W" or usb drive labled "W"
 - name can be changed in code
 
 ## Overview
